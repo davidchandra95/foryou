@@ -1,0 +1,255 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+body{
+    background: #f2f2f2;
+}
+
+@media(min-width: 192px) {
+   #tulisan {
+        font-size: 8px;
+    }
+    #gambar {
+        display: none;
+    }
+    #sidebar-wrapper
+    {
+    z-index: 1;
+    position: fixed;
+    width: 0px; /*posisi hilang*/
+    height: 100%;
+    overflow-y:hidden;
+    background: #2C3E50;
+    }
+    #page-content-wrapper
+    {
+        border-top: 2px solid #7997da;
+        width: 100%;
+        position: absolute;
+        padding-left: 0px; /*posisi pertama*/
+       
+    }
+    #wrapper.toggled #sidebar-wrapper
+    {
+        width : 200px; /*ketika diklik pertama*/
+    }
+    #wrapper.toggled #page-content-wrapper
+    {
+        padding-left: 200px; /*ketika diklik*/
+    }
+    .sidebar-nav li{
+    padding-bottom: 30px;
+    text-indent: 20px;
+    line-height: 40px;
+    border-bottom: 1px solid #D7D7D7;
+    }
+}
+
+@media(min-width:384px) {
+    #tulisan {
+        font-size: 11px;
+    }
+    #gambar {
+        display: none;
+    }
+    #sidebar-wrapper
+    {
+    z-index: 1;
+    position: fixed;
+    width: 0px; /*posisi hilang*/
+    height: 100%;
+    overflow-y:hidden;
+    background: #2C3E50;
+    }
+    #page-content-wrapper
+    {
+        border-top: 2px solid #7997da;
+        width: 100%;
+        position: absolute;
+        padding-left: 0px; /*posisi pertama*/
+       
+    }
+    #wrapper.toggled #sidebar-wrapper
+    {
+        width : 200px; /*ketika diklik pertama*/
+    }
+    #wrapper.toggled #page-content-wrapper
+    {
+        padding-left: 200px; /*ketika diklik*/
+    }
+    .sidebar-nav li{
+    padding-bottom: 30px;
+    text-indent: 20px;
+    line-height: 40px;
+    border-bottom: 1px solid #D7D7D7;
+    }
+
+}
+
+@media(min-width:576px) {
+    #tulisan {
+        font-size: 14px;
+    }
+    #gambar {
+        display: none;
+    }
+    #sidebar-wrapper
+    {
+    z-index: 1;
+    position: fixed;
+    width: 0px; /*posisi hilang*/
+    height: 100%;
+    overflow-y:hidden;
+    background: #2C3E50;
+    }
+    #page-content-wrapper
+    {
+        border-top: 2px solid #7997da;
+        width: 100%;
+        position: absolute;
+        padding-left: 0px; /*posisi pertama*/
+       
+    }
+    #wrapper.toggled #sidebar-wrapper
+    {
+        width : 200px; /*ketika diklik pertama*/
+    }
+    #wrapper.toggled #page-content-wrapper
+    {
+        padding-left: 200px; /*ketika diklik*/
+    }
+    .sidebar-nav li{
+    padding-bottom: 30px;
+    text-indent: 20px;
+    line-height: 40px;
+    border-bottom: 1px solid #D7D7D7;
+    }
+}
+
+
+@media(min-width:768px){
+        #gambar {
+            display: block;
+        }
+        #tulisan {
+            font-size: 18px;
+        }
+       #sidebar-wrapper{
+        z-index: 1;
+        position: fixed;
+        width: 200px;
+        height: 100%;
+        overflow-y:hidden;
+        background: #2C3E50;
+
+        }
+
+        #page-content-wrapper{
+            border-top: 2px solid #7997da;
+            width: 100%;
+            position: absolute;
+            padding-left: 200px;
+           
+        }
+
+        #wrapper.toggled #sidebar-wrapper{
+            width : 0px;
+        }
+
+
+        #wrapper.toggled #page-content-wrapper{
+            padding-left: 0px;
+        }
+
+        .sidebar-nav li{
+            padding-bottom: 33px;
+            text-indent: 20px;
+            line-height: 40px;
+            border-bottom: 1px solid #D7D7D7;
+        }
+ 
+}
+
+
+
+.fa{
+    margin-left: -21px; /*agar menu (admin) sama posisi */
+}
+
+.collapse {
+        background-color: #f2f2f2;
+    }
+
+.navbar { 
+    height: 10px; /*agar posisi navbar fixed */ 
+    background-color: #f2f2f2;
+}
+
+#wrapper{ /*agar posisi wrapper fixed */ 
+    padding-top: 30px;
+}
+
+
+.sidebar-nav{
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li a{
+    padding-top: 10px;
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 23px;
+    font-family: Oswald,'sans-serif';
+
+}
+
+.sidebar-nav li:hover{
+    background: #16A085;
+}
+
+.img-circle {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.garis{
+    border: 1px solid #8e8e8e;
+}
+
+.panelform,.form
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bagian{
+    margin-top: 15px;margin-bottom: 15px;
+}
+
+.bagian h1.berita, .bagian h1.lowongan , .bagian h1.pendek {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 0 30px;
+    color : #0099cc;
+}
+
+.bagian h1.pendek:after {
+    content: '';
+    background-color: #0099cc;
+    height: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: block;
+    margin-top: -13px;
+    margin-left: 200px;
+}
+
+.isiteks {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
